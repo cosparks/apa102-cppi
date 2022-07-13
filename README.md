@@ -26,5 +26,5 @@ $ sudo test-grid
 #### Add this library to your project
 * apa102-cppi is currently meant to be used as a static library.  If you want to compile it as a shared library, then you will need to write your own makefile
 
-#### Dependencies
+## Dependencies
 pigpio
