@@ -12,7 +12,7 @@ After doing a bit of research into rpi libraries to control apa102 leds, I found
 ```
 $ git submodule add https://github.com/cosparks/apa102-cppi.git <folder>
 ```
-* where <folder> is the relative path from the root of your repo
+* where \<folder\> is the relative path from the root of your repo
 #### Build and Install PIGPIO
 * If don't already have pigpio installed, run the package-installer script (this will install packages necessary to build and install pigpio)
 ```
