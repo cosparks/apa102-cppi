@@ -5,7 +5,7 @@ After doing a bit of research into rpi libraries to control apa102 leds, I found
 
 ## Getting set up:
 #### Add this library to your project
-* apa102-cppi is currently meant to be used as a static library, added to your project either directly or as a git submodule
+* apa102-cppi is currently meant to be used as a static library, added to your project as a git submodule
 * If you want to compile it as a shared library, then you will need to write your own makefile
 #### Add as submodule
 * To use this library as a git submodule, navigate to your own project folder (git repo) and enter:
