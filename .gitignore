@@ -1,6 +1,7 @@
 .vscode/
 obj/
 test/test-fill
+test/test-edges
 test/test-grid
 test/test-rainbow
 test/test-shape
