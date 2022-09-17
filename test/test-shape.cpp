@@ -42,10 +42,11 @@ int main(int argv, char** argc) {
 			shapesTopLeft.x = (shapesTopLeft.x + 1) % MATRIX_WIDTH;
 			lastLedUpdateTime = currentTime;
 		}
-
-	std::cout << "Test complete.  Returning" << std::endl;
-	return 1;
 	}
+	
+	std::cout << "Test complete.  Returning" << std::endl;
+	gpioTerminate();
+	return 1;
 }
 
 bool initializeGpio() {

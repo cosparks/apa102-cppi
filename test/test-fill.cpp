@@ -43,10 +43,11 @@ int main(int argv, char** argc) {
 			// on = !on;
 			lastLedUpdateTime = currentTime;
 		}
+	}
 
 	std::cout << "Test complete.  Returning" << std::endl;
+	gpioTerminate();
 	return 1;
-	}
 }
 
 bool initializeGpio() {

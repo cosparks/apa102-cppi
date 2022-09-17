@@ -10,8 +10,8 @@
 // Required test parameters
 // you MUST set your led matrix size and configuration option in order to run the tests
 #define MATRIX_WIDTH 10
-#define MATRIX_HEIGHT 10
-#define CONFIGURATION_OPTION Apa102::HorizontalTopLeft
+#define MATRIX_HEIGHT 50
+#define CONFIGURATION_OPTION Apa102::VerticalTopLeft
 
 // Optional test parameters
 #define TEST_PIXEL_BRIGHTNESS 31	// apa102 brightness
@@ -19,7 +19,7 @@
 #define TEST_RUN_TIME 20000			// led test duration in milliseconds
 
 // GPIO
-#define TEST_SPI_BAUD 6000000		// apa102 spi baud rate
+#define TEST_SPI_BAUD 4000000		// apa102 spi baud rate
 #define TEST_SPI_BUS 0				// pi's spi bus to use for tests
 
 #endif

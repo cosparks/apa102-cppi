@@ -7,7 +7,7 @@ bool initializeGpio();
 /**
  * @brief This test can be used to verify that your led strip/strips are connected properly
  * 
- * @note  You should see a one-dimensional 7-pixel rainbow move across your led strip
+ * @note  You should see a 7-pixel rainbow line move across your led strip
  */
 int main(int argv, char** argc) {
 	if (!initializeGpio()) {
@@ -50,10 +50,11 @@ int main(int argv, char** argc) {
 			lights.show();
 			lastLedUpdateTime = currentTime;
 		}
+	}
 
 	std::cout << "Test complete.  Returning" << std::endl;
+	gpioTerminate();
 	return 1;
-	}
 }
 
 bool initializeGpio() {

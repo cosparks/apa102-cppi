@@ -7,7 +7,7 @@ bool initializeGpio();
 /**
  * @brief This test helps to cofirm that an led grid is configured properly
  *
- * @note Red dots should move from top to bottom on either edge of the grid
+ * @note Red dots should move across each row of grid (along x)
  */
 int main(int argv, char** argc) {
 	if (!initializeGpio()) {
@@ -39,10 +39,11 @@ int main(int argv, char** argc) {
 			y = ((x == 0) ? y + 1 : y) % MATRIX_HEIGHT;
 			lastLedUpdateTime = currentTime;
 		}
+	}
 
 	std::cout << "Test complete.  Returning" << std::endl;
+	gpioTerminate();
 	return 1;
-	}
 }
 
 bool initializeGpio() {
